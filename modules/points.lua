@@ -1,4 +1,5 @@
 anim8 = require("libs/anim8")
+local assets = require("modules/assets")
 
 function  pointsLoad(map, world)
 -- TABELA ESCUDO E OLHO E A BARRA DE VIDA--
@@ -7,7 +8,7 @@ function  pointsLoad(map, world)
     hp = {}
     hp.posx = 10
     hp.posy = 0
-    hp.img = love.graphics.newImage("imagens/Cruz/lifebar.png")
+    hp.img = assets.image("imagens/Cruz/lifebar.png")
     hp.grid = anim8.newGrid(57, 20, hp.img:getWidth(), hp.img:getHeight())
     hp.anim = anim8.newAnimation(hp.grid('4-4', 1), 0.20)
     hp.anim2 = anim8.newAnimation(hp.grid('3-3', 1), 0.20)
@@ -17,14 +18,14 @@ function  pointsLoad(map, world)
     shield = {}
     shield.posx = 80
     shield.posy = 105
-    shield.img = love.graphics.newImage("imagens/Cruz/laurence_shield.png")
+    shield.img = assets.image("imagens/Cruz/laurence_shield.png")
     shield.grid = anim8.newGrid(216, 216, shield.img:getWidth(), shield.img:getHeight())
     shield.anim = anim8.newAnimation(shield.grid('1-6', 1), 0.20)
     --Olhos colecionaveis--
     eye = {}
     eye.posx = 120
     eye.posy = 165
-    eye.img = love.graphics.newImage("imagens/Npcs/eyeball.png")
+    eye.img = assets.image("imagens/Npcs/eyeball.png")
     eye.grid = anim8.newGrid(32, 32, eye.img:getWidth(), eye.img:getHeight())
     eye.anim = anim8.newAnimation(eye.grid('1-8',1, "1-8", 2, "1-8", 3), 0.08)
 end

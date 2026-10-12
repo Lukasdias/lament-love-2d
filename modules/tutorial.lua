@@ -1,7 +1,7 @@
 -- function tutorial_load()
--- Background = love.graphics.newImage("imagens/menu/Menu_Image.jpg")
--- instructions = love.graphics.newImage("imagens/menu/instructions.png")
--- instructions_title = love.graphics.newImage("imagens/menu/instructions_title.png")
+-- Background = love.graphics.newImage("imagens/Menu/Menu_Image.jpg")
+-- instructions = love.graphics.newImage("imagens/Menu/instructions.png")
+-- instructions_title = love.graphics.newImage("imagens/Menu/instructions_title.png")
 -- end 
 
 -- function tutorial_update(dt)

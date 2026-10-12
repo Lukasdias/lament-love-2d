@@ -1,8 +1,10 @@
+local assets = require("modules/assets")
+
 function soundLoad()
-    main_theme = love.audio.newSource("OST/Main_Theme.mp3", "static")
-    menu_theme = love.audio.newSource("OST/Menu_Theme.mp3", "static")
-    death_theme = love.audio.newSource("OST/Death_Theme.mp3", "static")
-    win_theme = love.audio.newSource("OST/Win_theme.mp3", "static")
+    main_theme = assets.source("OST/Main_Theme.mp3")
+    menu_theme = assets.source("OST/Menu_Theme.mp3")
+    death_theme = assets.source("OST/Death_Theme.mp3")
+    win_theme = assets.source("OST/Win_theme.mp3")
 end
 
 function soundUpdate(dt)

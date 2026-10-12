@@ -1,6 +1,7 @@
 local sti = require("sti") -- require na lib STI(SIMPLE TILED IMPLEMENTATION)
+local assets = require("modules/assets")
 function mapLoad()
-	mapImage = love.graphics.newImage("map/Map_1.png")
+	mapImage = assets.image("map/Map_1.png")
 	love.physics.setMeter(64)
 	map = sti("map.lua", {"box2d"}) -- declacara o map, além de requisitar a lib STI e solicitar o pluguin da Box2d-- 
 	world = love.physics.newWorld(0, 9.81*64, true) --cria um mundo com grav. horizontal de 9.81--

@@ -10,17 +10,17 @@ function menuLoad()
     gamestate = "menu"
     --[[
     --Background--
-    menu_image = love.graphics.newImage("imagens/menu/menuBG.png")
+    menu_image = love.graphics.newImage("imagens/Menu/menuBG.png")
     menu_grid = anim8.newGrid(768, 384, menu_image:getWidth(), menu_image:getHeight())
     menu_anim =  anim8.newAnimation(menu_grid("1-9", 1, "1-9", 2, "1-9", 3), 0.08)
     --utilizando a anim8 para animar o menu--
-     Title = love.graphics.newImage("imagens/menu/Main_Title.png")
+     Title = love.graphics.newImage("imagens/Menu/Main_Title.png")
     --cortando frame por frame usando anim8--
      Titlegrid = anim8.newGrid(756, 108, Title:getWidth(), Title:getHeight())
      --defininado como será a animação--
      TitleAnimation = anim8.newAnimation(Titlegrid('1-1', 1,'1-1', 2,'1-1', 3,'1-1', 4,'1-1', 5,'1-1', 6,'1-1', 7,'1-1', 8,'1-1', 9,'1-1', 10,'1-1', 11,'1-1', 12,'1-1', 13,'1-1', 14,'1-1', 15,'1-1', 16,'1-1', 17,'1-1', 18,'1-1', 19,'1-1', 20),  0.1)
     --creditos-- 
-    credits_image = love.graphics.newImage("imagens/menu/credits.png")
+    credits_image = love.graphics.newImage("imagens/Menu/credits.png")
     --]]
     start_button = buttonLib:new("Start", 180, 40, 485, 375, {128,0,0}, function() play = true  end)
     quit_button = buttonLib:new("Surrender", 180, 40, 485, 450, {128,0,0}, function() love.event.quit()  end)

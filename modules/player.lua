@@ -1,6 +1,7 @@
 --requires--
 local anim8 = require ('libs/anim8')
-local cam = require('STALKER-X/Camera')
+local assets = require('modules/assets')
+local cam = require('modules/camera')
 --requires-- 
 local cAnim
 local cImg
@@ -26,9 +27,9 @@ function playerLoad(map, world)
 	laurence.body:setFixedRotation(true)
 	-- Sprites Organizados--
 	--Imagens--
-	laurence.imgStop = love.graphics.newImage("imagens/Cruz/Cruz_Stop.png")
-	laurence.imgRun = love.graphics.newImage("imagens/Cruz/Cruz_Run.png")
-	laurence.imgJump = love.graphics.newImage("imagens/Cruz/Cruz_Jump.png")
+	laurence.imgStop = assets.image("imagens/Cruz/Cruz_Stop.png")
+	laurence.imgRun = assets.image("imagens/Cruz/Cruz_Run.png")
+	laurence.imgJump = assets.image("imagens/Cruz/Cruz_Jump.png")
 	--Grids--
 	laurence.gridStop = anim8.newGrid(21, 37,laurence.imgStop:getWidth(), laurence.imgStop:getHeight())
 	laurence.gridRun= anim8.newGrid(34, 40,laurence.imgRun:getWidth(), laurence.imgRun:getHeight())

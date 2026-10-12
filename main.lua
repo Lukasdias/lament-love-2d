@@ -4,7 +4,7 @@ require("modules/menu")
 require("modules/sound")
 require("modules/npc")
 require("modules/points")
-require("modules/gameOver")
+require("modules/GameOver")
 require("modules/endGame")
 
 largura = love.graphics.getWidth()

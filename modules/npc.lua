@@ -1,4 +1,5 @@
 local anim8 = require("libs/anim8")
+local assets = require("modules/assets")
 
 function npcLoad(map)
    ghostLayer = map:addCustomLayer("ghost", 11)
@@ -7,7 +8,7 @@ function npcLoad(map)
    npc = {}
    --vetor do fantasma com efeitos azul e que está a esquerda--
    npc.ghost = {}
-   npc.ghost.img = love.graphics.newImage('imagens/Npcs/ghost_blue.png')
+   npc.ghost.img = assets.image('imagens/Npcs/ghost_blue.png')
    npc.ghost.grid= anim8.newGrid(37, 65 ,npc.ghost.img:getWidth() ,  npc.ghost.img:getHeight())
    npc.ghost.anim = anim8.newAnimation(npc.ghost.grid('1-4', 1) , 0.09)
    -- posições fantasma 1--
@@ -16,7 +17,7 @@ function npcLoad(map)
    npc.ghost.vL = 1  
    --vetor do fantasma sem efeitos e que está a direita--
    npc.ghost2 = {}
-   npc.ghost2.img = love.graphics.newImage('imagens/Npcs/ghost.png')
+   npc.ghost2.img = assets.image('imagens/Npcs/ghost.png')
    npc.ghost2.grid= anim8.newGrid(37, 65 ,npc.ghost2.img:getWidth() ,  npc.ghost2.img:getHeight())
    npc.ghost2.anim = anim8.newAnimation(npc.ghost2.grid('1-4', 1) , 0.09)
     --posições fantasma 2--
@@ -25,7 +26,7 @@ function npcLoad(map)
    npc.ghost2.vL = 1
    --Medusa do terceiro andar--
    npc.medusa = {}
-   npc.medusa.img = love.graphics.newImage('imagens/Npcs/Medusa.png')
+   npc.medusa.img = assets.image('imagens/Npcs/Medusa.png')
    npc.medusa.grid= anim8.newGrid(57, 88 ,npc.medusa.img:getWidth(),  npc.medusa.img:getHeight())
    npc.medusa.anim = anim8.newAnimation(npc.medusa.grid("1-8", 1), 0.09)
    --posições medusa--
@@ -34,7 +35,7 @@ function npcLoad(map)
    npc.medusa.vL = 0.5
     --Múmia do terceiro andar--
    npc.mummy = {}
-   npc.mummy.img = love.graphics.newImage('imagens/Npcs/mummy.png')
+   npc.mummy.img = assets.image('imagens/Npcs/mummy.png')
    npc.mummy.grid= anim8.newGrid(37, 45 ,npc.mummy.img:getWidth(),  npc.mummy.img:getHeight())
    npc.mummy.anim = anim8.newAnimation(npc.mummy.grid("1-5", 1, "1-5", 2, "1-5", 3, "1-3", 4), 0.08)
     --poisição mumia---
