@@ -19,14 +19,42 @@ Castlevania.
 The game still has a few bugs. It was a first project, and it is kept here as
 it was written.
 
-## Running it
+## How to run it
 
-Install LÖVE (the project targets 11.x) from https://love2d.org/, then from the
-project directory run:
+The project targets LÖVE 11.x. Install LÖVE first, then run the game folder.
+
+### 1. Install LÖVE
+
+- Linux: install from your package manager (for example `sudo apt install love`)
+  or download the AppImage from https://love2d.org/.
+- Windows: download and run the installer from https://love2d.org/.
+- macOS: `brew install --cask love`, or use the `.dmg` from https://love2d.org/.
+- WSL: LÖVE opens a graphical window, so it needs WSLg (Windows 11, or an
+  updated Windows 10) or an X server. Install LÖVE inside the WSL distro the
+  same way as Linux, then run it as below.
+
+Check the install:
+
+```
+love --version
+```
+
+### 2. Run the game
+
+From the project root (the folder that contains `main.lua` and `conf.lua`):
 
 ```
 love .
 ```
+
+On Windows you can also drag the project folder onto `love.exe`, or run:
+
+```
+love.exe C:\path\to\lament-love-2d
+```
+
+The game opens fullscreen (desktop mode). There is no quit keybind: use the
+"Surrender" button in the menu, or close the window.
 
 ## Controls
 
