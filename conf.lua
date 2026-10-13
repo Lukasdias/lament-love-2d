@@ -8,8 +8,6 @@ function love.conf(t)
     t.window.title = "The Lament of Laurence"
     t.window.width = 770
     t.window.height = 580
-    t.window.fullscreen = true
-    t.window.fullscreentype = "desktop"
     t.window.vsync = 1
     t.window.msaa = 0
     t.window.resizable = false

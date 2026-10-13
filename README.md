@@ -53,7 +53,7 @@ On Windows you can also drag the project folder onto `love.exe`, or run:
 love.exe C:\path\to\lament-love-2d
 ```
 
-The game opens fullscreen (desktop mode). There is no quit keybind: use the
+The game opens in a 770x580 window. There is no quit keybind: use the
 "Surrender" button in the menu, or close the window.
 
 ## Controls
